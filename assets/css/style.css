@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #C59849;
+    --secondary-color: #C73E1D;
+    --tertiary-color: #84a59d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header style */
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: 24px;
+    margin: 15px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero */
+.hero {
+    background-image: url("../images/html-img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+}
