@@ -9,9 +9,6 @@
     margin: 0;
 }
 
-div {
-    display: block;
-}
 
 /* Header style */
 header {
@@ -22,13 +19,17 @@ header {
     top: 0;
     left: 0;
     height: 100%;
-    width: 10%;
+    width: 136px;
     flex-direction: column;
 }
 
 header img {
     height: 8%;
     margin: 10px;
+}
+
+header nav ul li {
+    text-align: center;
 }
 
 header nav ul {
@@ -56,9 +57,54 @@ header nav ul li a {
 
 /* Hero */
 .hero {
+    display: block;
     background-image: url("../images/html-img.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
     width: auto;
 }
+
+.aboutme {
+    background: var(--primary-color);
+    margin-left: 136px;
+    display: flex;
+    text-align: center;
+}
+
+h2 {
+    color: var(--tertiary-color);
+    font-size: 48px;
+    margin: 15px;
+    text-align: end;
+}
+
+.aboutme p {
+    border-left: 2px solid var(--tertiary-color);
+    font-size: 24px;
+    color: var(--tertiary-color);
+    padding: 50px;
+    margin: 25px 0 25px 15px;
+
+}
+
+.aboutme img {
+    width: 25%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.project {
+    background: var(--primary-color);
+    margin-left: 136px;
+    display: flex;
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-auto-columns: repeat(4, fr1);
+    grid-auto-rows: repeat(3, fr1);
+}
+
+.grid-items
