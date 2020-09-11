@@ -74,13 +74,16 @@ header nav ul li a {
 
 h2 {
     color: var(--tertiary-color);
-    font-size: 48px;
-    margin: 15px;
+    font-size: 40px;
+    padding: 15px;
+    margin: 25px 0;
     text-align: end;
+    border-left: 2px solid var(--tertiary-color);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
 .aboutme p {
-    border-left: 2px solid var(--tertiary-color);
     font-size: 24px;
     color: var(--tertiary-color);
     padding: 50px;
@@ -101,10 +104,69 @@ h2 {
     text-align: center;
 }
 
-.project-container {
+.wrapper {
     display: grid;
-    grid-auto-columns: repeat(4, fr1);
-    grid-auto-rows: repeat(3, fr1);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 5px;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 25px 15px;
 }
 
-.grid-items
+.runbud {
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+}
+
+.java {
+    background-image: url("../images/javascript.jpeg");
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.node {
+    background-image: url("../images/node-js.png");
+    background-size: cover;
+}
+
+.sql {
+    background-image: url("../images/sql.jpeg");
+    background-size: cover;
+}
+
+.mern {
+    background-image: url("../images/mern.png");
+    background-size: cover;
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+}
+
+.react {
+    background-image: url("../images/react.png");
+    background-size: cover;
+}
+
+.contact {
+    background: var(--primary-color);
+    margin-left: 136px;
+    display: flex;
+    text-align: center;
+}
+
+.contact ul {
+    font-size: 24px;
+    color: var(--tertiary-color);
+    padding: 50px;
+    margin: 25px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact ul li {
+    justify-content: space-between;
+}
