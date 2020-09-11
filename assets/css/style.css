@@ -69,6 +69,27 @@ header nav ul li:hover {
     width: auto;
 }
 
+.headline {
+    background: var(--primary-color);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: auto;
+}
+
+.name {
+    background: var(--primary-color);
+}
+
+.name p {
+    margin-left: 150px;
+    margin-right: 50px;
+    font-size: 64px;
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
 .aboutme {
     background: var(--primary-color);
     margin-left: 136px;
@@ -87,12 +108,17 @@ h2 {
     transform: rotate(180deg);
 }
 
+.aboutme-content {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
 .aboutme p {
     font-size: 24px;
     color: var(--tertiary-color);
     padding: 50px;
     margin: 25px 0 25px 15px;
-
 }
 
 .aboutme img {
@@ -112,7 +138,9 @@ h2 {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 100px;
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+    width: 1000px;
     grid-gap: 5px;
     border-radius: 5px;
     padding: 50px;
@@ -174,16 +202,29 @@ h2 {
     align-items: center;
 }
 
-.contact ul li p {
+.contact ul li a {
     color: var(--tertiary-color);
     text-decoration: none;
     border-bottom: 3px solid var(--tertiary-color);
     padding-bottom: 10px;
 }
 
-.contact ul li a {
-    color: var(--tertiary-color);
-    text-decoration: none;
-    border-bottom: 3px solid var(--tertiary-color);
-    padding-bottom: 10px;
+@media screen and (max-width: 980px) {
+    .aboutme img {
+        height: 25%;
+        weight: 25%;
+        margin: 50px 0 0 0;
+    }
+
+    .contact ul {
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .aboutme {
+        flex: 2 100%;
+    }
+
 }
