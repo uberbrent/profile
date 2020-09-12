@@ -14,4 +14,4 @@ The live website can be found at https://uberbrent.github.io/profile/
 
 ## Screen Shots
 The Completed Website is shown below.
-![Website Top](assets/images/website.middle.png)
+![Website Top](assets/images/website-middle.png)
