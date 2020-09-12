@@ -156,7 +156,7 @@ h2 {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     text-decoration: none;
-    width: 35%;
+    width: 45%;
     
 }
 
@@ -235,13 +235,46 @@ h2 {
 }
 
 @media screen and (max-width: 980px) {
-    .contact div {
+    .contact img {
+        width: 35%;
     }
 }
 
-@media screen and(max-width: 768px) {
-    .aboutme {
-        flex: 2 100%;
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 25px; 
     }
+
+    .hero {
+        height: 150px;
+    }
+
+    .wrapper {
+        height: 250px;
+        width: 500px;
+    }
+
+    .wrapper p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .contact div {
+        flex: 0 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact img {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
 
 }
