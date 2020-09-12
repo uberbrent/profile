@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #F9EDCC;
-    --secondary-color: #2FA2B1;
-    --tertiary-color: #454545;
+    --primary-color: #F4F4F6;
+    --secondary-color: #B8F2E6;
+    --tertiary-color: #060E0F;
 }
 
 * {
@@ -12,87 +12,72 @@
 
 /* Header style */
 header {
+    padding: 20px 35px;
     background-color: var(--secondary-color);
     display: flex;
-    position: fixed;
-    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 136px;
-    flex-direction: column;
+    background-image: url("../images/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-header img {
-    height: 8%;
-    margin: 10px;
+header p {
+    font-size: 48px;
+    margin: 15px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    background: white;
+    border-bottom: 2px solid var(--tertiary-color);
+    text-align: center;
 }
 
 header nav ul li {
     text-align: center;
 }
 
+header a {
+    color: var(--tertiary-color);
+}
+
 header nav ul {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul li img {
-    height: 25%;
-    width: 25%;
-    margin: 15px;
-}
-
 header nav ul li a {
-    font-size: 24px;
+    font-size: 1.55vw;
     margin: 15px;
     text-decoration: none;
-    color: var(--tertiary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 header nav ul li:hover {
-    background: #9EDDE5;
+    background: var(--secondary-color);
+    color: white;
+    text-shadow: none;
+    border-radius: 15px;
 }
 
 /* Hero */
 .hero {
-    display: block;
-    background-image: url("../images/html-img.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/hero.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 300px;
     width: auto;
 }
 
-.headline {
-    background: var(--primary-color);
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-basis: auto;
-}
-
-.name {
-    background: var(--primary-color);
-}
-
-.name p {
-    margin-left: 150px;
-    margin-right: 50px;
-    font-size: 64px;
-    color: var(--tertiary-color);
-    text-align: center;
-}
-
 .aboutme {
     background: var(--primary-color);
-    margin-left: 136px;
     display: flex;
     text-align: center;
 }
@@ -130,7 +115,6 @@ h2 {
 
 .project {
     background: var(--primary-color);
-    margin-left: 136px;
     display: flex;
     text-align: center;
 }
@@ -185,16 +169,12 @@ h2 {
 
 .contact {
     background: var(--primary-color);
-    margin-left: 136px;
     display: flex;
 }
 
 .contact ul {
     font-size: 24px;
     color: var(--tertiary-color);
-    padding: 50px;
-    margin: 25px 15px;
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
