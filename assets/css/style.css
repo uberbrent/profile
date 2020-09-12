@@ -276,5 +276,13 @@ h2 {
 }
 
 @media screen and (max-width: 560px) {
+    .contact ul {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .contact ul li a {
+        border-bottom: none;
 
+    }
 }
